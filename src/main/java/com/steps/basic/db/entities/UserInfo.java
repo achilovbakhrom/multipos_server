@@ -15,17 +15,17 @@ public class UserInfo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-    @Column(name = "username")
+    @Column
     private String username;
-    @Column(name = "password")
+    @Column
     private String password;
-    @Column(name = "e_mail")
+    @Column
     private String eMail;
-    @Column(name = "mode")
+    @Column
     private String mode;
-    @Column(name = "uid")
+    @Column
     private String uid;
-    @Column(name = "fcm_token")
+    @Column
     private String fcmToken;
     @ElementCollection
     private List<SimpleGrantedAuthority> authorities;
